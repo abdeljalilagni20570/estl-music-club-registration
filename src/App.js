@@ -161,11 +161,11 @@ export default function ClubMusiqueDesign() {
                   <option value="GC">GC (Génie Civil)</option>
                   <option value="GBB">GBB (Génie Biomédical)</option>
                   <option value="MPCN">MPCN (Medias et Production)</option>
-                  <option value="Autre">MDEU (MARKETHING DUGITAL)</option>
-                  <option value="Autre">IGE (INFORMATIQUE ET GESTION DES ENTREPRISES)</option>
-                  <option value="Autre">MJF(MANAGMENT  JURIDRIQUE ET FINANCE)</option>
-                  <option value="Autre">RCS(RESEAUX ET CYBER SECURITER)</option>
-                  <option value="Autre">IATN(INTELLIGENSE D’AFFAIRE ET TRANSFORMATION NUMERIQUE)</option>
+                  <option value="MDEU">MDEU (MARKETHING DUGITAL)</option>
+                  <option value="IGE">IGE (INFORMATIQUE ET GESTION DES ENTREPRISES)</option>
+                  <option value="MJF">MJF(MANAGMENT  JURIDRIQUE ET FINANCE)</option>
+                  <option value="RCS">RCS(RESEAUX ET CYBER SECURITER)</option>
+                  <option value="IATN">IATN(INTELLIGENSE D’AFFAIRE ET TRANSFORMATION NUMERIQUE)</option>
                  
                 </select>
               </div>
