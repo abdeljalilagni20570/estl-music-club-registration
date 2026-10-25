@@ -1,6 +1,5 @@
 import { supabase } from './supabaseClient';
 
-// مثال عند الضغط على زر التسجيل
 const handleSubmit = async (formData) => {
   const { data, error } = await supabase
     .from('data') // اسم الجدول عندك في Supabase هو data
