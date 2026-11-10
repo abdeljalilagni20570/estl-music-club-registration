@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import { User, Send, Sparkles, RefreshCw } from 'lucide-react';
-import logo from './logo.jpeg'; // استيراد الصورة من مجلد src
+import logo from './logo.jpeg'; 
 
-// إعداد اتصال Supabase بالمفاتيح الخاصة بك
+
 const supabaseUrl = 'https://tibsyifxepxkdvfpniot.supabase.co';
 const supabaseAnonKey = 'sb_publishable_a4prjO5tSVGwZldGVGFtYA_QdTnT26O';
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
@@ -12,13 +12,13 @@ export default function ClubMusiqueDesign() {
   const [loading, setLoading] = useState(false);
   const [notification, setNotification] = useState(null);
 
-  // حالة حقول النموذج مطابقة تماماً لأعمدة قاعدة البيانات
+
   const [formData, setFormData] = useState({
-    nom_complet: '',
+    nom_complet: 'Nom et Prénom',
     filiere: 'CDL',
     niveau: 'Débutant',
     instrument: 'Guitare',
-    telephone: '',
+    telephone: '0600000000',
   });
 
   const showNotification = (msg, type = 'success') => {
@@ -41,7 +41,7 @@ export default function ClubMusiqueDesign() {
     setLoading(true);
 
     try {
-      // إرسال البيانات مباشرة إلى جدول data في Supabase
+
       const { error } = await supabase
         .from('data')
         .insert([
