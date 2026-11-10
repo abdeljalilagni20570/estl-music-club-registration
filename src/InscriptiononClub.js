@@ -2,7 +2,7 @@ import { supabase } from './supabaseClient';
 
 const handleSubmit = async (formData) => {
   const { data, error } = await supabase
-    .from('data') // اسم الجدول عندك في Supabase هو data
+    .from('data') // name of table (data)
     .insert([
       { 
         Full_Name: formData.fullName,          // الاسم الكامل
